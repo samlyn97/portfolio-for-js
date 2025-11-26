@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sam Design · Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container inner">
+      <div class="brand">SAM DESIGN <span class="muted">DUBLIN</span></div>
+      <nav class="main-nav">
+        <a href="index.html">ABOUT</a>
+        <a href="works.html">WORKS</a>
+        <a class="active" href="contact.html">CONTACT</a>
+        <a class="btn" href="https://drive.google.com/file/d/1Qh7Q11vgD9UVuLKoN8J2lbPyh-OIKxx1/view?usp=sharing" target="_blank" rel="noreferrer">Download Resume</a>
+        <label class="theme-switch" for="theme-toggle">
+          <input id="theme-toggle" type="checkbox" aria-label="Toggle dark mode" />
+          <span class="switch-track">
+            <span class="switch-thumb"></span>
+            <span class="switch-ico sun" aria-hidden="true">
+              <img src="images/Day Mode Icon.svg" alt="" />
+            </span>
+            <span class="switch-ico moon" aria-hidden="true">
+              <img src="images/Night Mode Icon.svg" alt="" />
+            </span>
+          </span>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section contact">
+      <h1>GET IN TOUCH</h1>
+      <p class="lead muted">Feel free to reach out for collaborations or questions.</p>
+
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <section class="container section cta">
+      <h2>LET'S MAKE OUR<br/>DESIGN SHINE</h2>
+      <p class="muted small">"Collaborate with me to craft exceptional designs that reflect your vision."</p>
+      <a class="btn" href="https://drive.google.com/file/d/1Qh7Q11vgD9UVuLKoN8J2lbPyh-OIKxx1/view?usp=sharing" target="_blank" rel="noreferrer">Download Resume</a>
+    </section>
+
+    <p class="brand-large">SAM DESIGN</p>
+  </main>
+
+  <div id="toast" class="toast elevated hidden" role="status" aria-live="polite">
+    Message sent successfully.
+    <button class="toast-close" type="button" aria-label="Close">×</button>
+  </div>
+
+  <footer class="site-footer container">
+    <p>©2025 DESIGN</p><p>DUBLIN</p>
+  </footer>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

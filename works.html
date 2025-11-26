@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sam Design · Works</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- main navigation and site header -->
+  <header class="site-header">
+    <div class="container inner">
+      <div class="brand">SAM DESIGN <span class="muted">DUBLIN</span></div>
+      <nav class="main-nav">
+        <a href="index.html">ABOUT</a>
+        <a class="active" href="works.html">WORKS</a>
+        <a href="contact.html">CONTACT</a>
+        <a class="btn" href="https://drive.google.com/file/d/1Qh7Q11vgD9UVuLKoN8J2lbPyh-OIKxx1/view?usp=sharing" target="_blank" rel="noreferrer">Download Resume</a>
+        <label class="theme-switch" for="theme-toggle">
+          <input id="theme-toggle" type="checkbox" aria-label="Toggle dark mode" />
+          <span class="switch-track">
+            <span class="switch-thumb"></span>
+            <span class="switch-ico sun" aria-hidden="true">
+              <img src="images/Day Mode Icon.svg" alt="" />
+            </span>
+            <span class="switch-ico moon" aria-hidden="true">
+              <img src="images/Night Mode Icon.svg" alt="" />
+            </span>
+          </span>
+        </label>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section-title section">
+      <h1>SELECTED<br/>WORKS</h1>
+      <p class="sub">A selection of product and UX work from large scale platforms to creative experiments.</p>
+    </section>
+    <section class="section">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+      <div id="project-list" class="works-grid project-list"></div>
+    </section>
+    <section class="section cta">
+      <h2>LET'S MAKE OUR<br/>DESIGN SHINE</h2>
+      <p class="muted small">"Collaborate with me to craft exceptional designs that reflect your vision."</p>
+      <a class="btn" href="https://drive.google.com/file/d/1Qh7Q11vgD9UVuLKoN8J2lbPyh-OIKxx1/view?usp=sharing" target="_blank" rel="noreferrer">Download Resume</a>
+    </section>
+    <p class="brand-large">SAM DESIGN</p>
+  </main>
+  <!-- simple footer with year + location -->
+<footer class="site-footer container">
+    <p>©2025 DESIGN</p><p>DUBLIN</p>
+  </footer>
+  <div id="project-modal" class="project-modal hidden">
+    <div class="project-modal-content surface elevated">
+      <button id="modal-close" class="modal-close" aria-label="Close modal">×</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-role" class="muted small"></p>
+      <p id="modal-description"></p>
+      <div id="modal-tags" class="tags"></div>
+      <a id="modal-link" class="btn" href="#" target="_blank" rel="noreferrer">View Case</a>
+    </div>
+  </div>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
